@@ -1,0 +1,99 @@
+:root {
+  --background-main-color: #ffffff;
+  --background-light-color: #f4f4fd;
+  --background-modal-color: #f5f4fa;
+  --text-body-color: #434455;
+  --text-second-color: #f4f4fd;
+  --title-hero-color: #ffffff;
+  --title-main-color: #2e2f42;
+  --logo-first-text-color: #4d5ae5;
+  --logo-second-text-color: #2e2f42;
+  --logo-third-text-color: #f4f4fd;
+  --btn-main-color: #4d5ae5;
+  --btn-text-color: #ffffff;
+  /* Font */
+  --main-font: 'Roboto', sans-serif;
+  --second-font: 'Raleway', sans-serif;
+
+  --text-third-color: #ffffff;
+  --btn-second-color: #f5f4fa;
+  --btn-accent-color: #188ce8;
+  --btn-second-text-color: #212121;
+  --header-footer-accent-color: #2196f3;
+  --footer-tel-mail-color: rgba(255, 255, 255, 0.6);
+  --icon-soc-main-color: #afb1b8;
+  --icon-soc-accent-color: #ffffff;
+  --icon-soc-bg-main-color: #ffffff;
+  --icon-soc-bg-footer-color: rgba(255, 255, 255, 0.1);
+  --icon-soc-bg-accent-color: #2196f3;
+  --icon-clients-logo-main-color: #afb1b8;
+  --icon-clients-logo-accent-color: #2196f3;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--text-main-color);
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  background-color: var(--background-main-color);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:focus {
+  outline: thin dotted;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  width: 100%;
+  padding: 94px 0;
+}

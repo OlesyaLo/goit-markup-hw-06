@@ -14,7 +14,7 @@
   /* Font */
   --main-font: 'Roboto', sans-serif;
   --second-font: 'Raleway', sans-serif;
-
+  /* Not updated */
   --text-third-color: #ffffff;
   --btn-second-color: #f5f4fa;
   --btn-accent-color: #188ce8;
@@ -32,7 +32,7 @@
 
 body {
   font-family: var(--main-font);
-  color: var(--text-main-color);
+  color: var(--text-body-color);
   font-size: 16px;
   letter-spacing: 0.02em;
   background-color: var(--background-main-color);

@@ -37,3 +37,63 @@ body {
   letter-spacing: 0.02em;
   background-color: var(--background-main-color);
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:focus {
+  outline: thin dotted;
+}
+
+.container {
+  width: 1128px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  width: 100%;
+  padding: 94px 0;
+}

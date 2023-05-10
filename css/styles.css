@@ -11,6 +11,7 @@
   --logo-third-text-color: #f4f4fd;
   --btn-main-color: #4d5ae5;
   --btn-text-color: #ffffff;
+  --header-accent-color: #404bbf;
   /* Font */
   --main-font: 'Roboto', sans-serif;
   --second-font: 'Raleway', sans-serif;
@@ -19,7 +20,7 @@
   --btn-second-color: #f5f4fa;
   --btn-accent-color: #188ce8;
   --btn-second-text-color: #212121;
-  --header-footer-accent-color: #2196f3;
+
   --footer-tel-mail-color: rgba(255, 255, 255, 0.6);
   --icon-soc-main-color: #afb1b8;
   --icon-soc-accent-color: #ffffff;
@@ -104,44 +105,103 @@ img {
 /*----------------------- Header section----------------------- */
 
 .header-section {
-  align-items: baseline;
   border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .header-nav {
   display: flex;
+  align-items: baseline;
 }
 
 .header-logo {
+  display: inline-block;
+  padding-top: 25.5px;
+  padding-bottom: 25.5px;
+  font-family: var(--second-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  color: var(--logo-first-text-color);
+  letter-spacing: 0.03em;
 }
 
 .header-logo-color {
+  color: var(--logo-second-text-color);
 }
 
-.nav-list {
+.header-nav-list {
+  display: flex;
+  margin-left: 76px;
 }
 
-.nav-item {
+.header-nav-item {
+  margin-right: 40px;
 }
 
-.nav-link {
+.header-nav-item:last-child {
+  margin-right: 0;
+}
+
+.header-nav-link {
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--title-main-color);
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav-link.current::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -1px;
+  right: 0;
+
+  background-color: currentColor;
+  border-radius: 2px;
 }
 
 .header-adress {
+  display: flex;
+  margin-left: auto;
 }
 
-.address-list {
+.header-address-list {
+  display: flex;
+  align-items: baseline;
 }
 
-.address-item {
+.header-address-item:first-child {
+  margin-right: 40px;
 }
 
-.address-link {
+.header-address-mail,
+.header-address-tel {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-body-color);
+}
+
+.header-nav-link.current,
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-address-mail:hover,
+.header-address-tel:hover,
+.header-address-mail:focus,
+.header-address-tel:focus {
+  color: var(--header-accent-color);
 }

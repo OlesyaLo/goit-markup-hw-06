@@ -60,6 +60,7 @@ button {
   border: none;
   border-radius: 4px;
   outline: none;
+  font-family: inherit;
 }
 
 address {
@@ -80,6 +81,7 @@ img {
 
 .link {
   text-decoration: none;
+  font-family: inherit;
   color: inherit;
 }
 
@@ -88,12 +90,58 @@ img {
 }
 
 .container {
-  width: 1128px;
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .section {
   width: 100%;
-  padding: 94px 0;
+  padding: 120px 0;
+}
+
+/*----------------------- Header section----------------------- */
+
+.header-section {
+  align-items: baseline;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-logo {
+}
+
+.header-logo-color {
+}
+
+.nav-list {
+}
+
+.nav-item {
+}
+
+.nav-link {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-adress {
+}
+
+.address-list {
+}
+
+.address-item {
+}
+
+.address-link {
 }

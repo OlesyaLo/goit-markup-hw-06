@@ -14,6 +14,7 @@
   --btn-main-color: #4d5ae5;
   --btn-accent-color: #404bbf;
   --btn-text-color: #ffffff;
+  --footer-background-color: #2e2f42;
   /* Font */
   --main-font: 'Roboto', sans-serif;
   --second-font: 'Raleway', sans-serif;
@@ -352,22 +353,132 @@ img {
 }
 
 .team-item {
+  margin-right: 24px;
+  background-color: var(--background-main-color);
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.team-img {
+.team-item:last-child {
+  margin-right: 0;
 }
+
 .team-text-wrap {
+  display: block;
+  padding: 32px 0;
 }
+
 .team-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--title-main-color);
+  margin-bottom: 8px;
 }
+
 .team-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text-body-color);
+  margin-bottom: 8px;
 }
 .team-soc-list {
+  display: flex;
 }
+
 .team-soc-item {
 }
 .team-soc-link {
 }
 
 .team-soc-icon {
+}
+
+/*---------------------- Customers section---------------------- */
+
+.customers-container {
+  display: block;
+}
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.customers-list {
+}
+
+.customers-item {
+}
+
+.customers-link {
+}
+
+.customers-logo-icon {
+}
+
+/*---------------------- Footer section---------------------- */
+.footer-section {
+  padding: 100px 0;
+  background-color: var(--footer-background-color);
+}
+
+.footer-general-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-text-container {
+  margin-right: 120px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 17.5px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  color: var(--logo-first-text-color);
+  letter-spacing: 0.03em;
+}
+
+.footer-logo-color {
+  color: var(--logo-third-text-color);
+}
+
+.footer-container-text {
+  width: 264px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-second-color);
+}
+.footer-soc-container {
+  display: block;
+}
+.footer-soc-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-third-color);
+  margin-bottom: 16px;
+}
+.footer-soc-list {
+}
+
+.footer-soc-item {
+}
+.footer-soc-link {
+}
+.footer-soc-icon {
 }

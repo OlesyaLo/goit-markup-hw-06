@@ -120,7 +120,7 @@ img {
 }
 
 .header-logo {
-  display: inline-block;
+  display: flex;
   padding-top: 25.5px;
   padding-bottom: 25.5px;
   font-family: var(--second-font);
@@ -149,7 +149,7 @@ img {
 }
 
 .header-nav-link {
-  display: inline-block;
+  display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
   font-weight: 500;
@@ -188,7 +188,7 @@ img {
 
 .header-address-mail,
 .header-address-tel {
-  display: inline-block;
+  display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
   font-weight: 400;
@@ -215,7 +215,6 @@ img {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -255,8 +254,6 @@ img {
 }
 
 /*---------------------- Benefits section---------------------- */
-.benefits-section {
-}
 
 .visually-hidden {
   position: absolute;
@@ -301,4 +298,33 @@ img {
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-body-color);
+}
+
+/*---------------------- Services section---------------------- */
+.services-section {
+  width: 100%;
+  padding-bottom: 120px;
+}
+.services-container {
+  display: block;
+}
+.services-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  color: var(--title-main-color);
+}
+.services-list {
+  display: flex;
+}
+
+.services-item {
+  margin-right: 24px;
+}
+
+.services-item:last-child {
+  margin-right: 0;
 }

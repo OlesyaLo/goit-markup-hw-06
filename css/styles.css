@@ -328,3 +328,46 @@ img {
 .services-item:last-child {
   margin-right: 0;
 }
+
+/*---------------------- Team section---------------------- */
+.team-section {
+  background-color: var(--background-light-color);
+}
+
+.team-container {
+  flex-direction: column;
+}
+
+.team-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item {
+}
+
+.team-img {
+}
+.team-text-wrap {
+}
+.team-item-title {
+}
+.team-item-text {
+}
+.team-soc-list {
+}
+.team-soc-item {
+}
+.team-soc-link {
+}
+
+.team-soc-icon {
+}

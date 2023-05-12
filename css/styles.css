@@ -93,7 +93,7 @@ img {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
   margin: 0 auto;
@@ -141,12 +141,8 @@ img {
   margin-left: 76px;
 }
 
-.header-nav-item {
+.header-nav-item:not(:last-child) {
   margin-right: 40px;
-}
-
-.header-nav-item:last-child {
-  margin-right: 0;
 }
 
 .header-nav-link {
@@ -322,12 +318,8 @@ img {
   display: flex;
 }
 
-.services-item {
+.services-item:not(:last-child) {
   margin-right: 24px;
-}
-
-.services-item:last-child {
-  margin-right: 0;
 }
 
 /*---------------------- Team section---------------------- */

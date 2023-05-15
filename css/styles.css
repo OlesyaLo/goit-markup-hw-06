@@ -750,10 +750,8 @@ textarea {
 .modal-form-icon {
   display: block;
   position: absolute;
-  top: 65%;
+  top: 50%;
   left: 16px;
-  width: 18px;
-  height: 18px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -833,7 +831,7 @@ textarea {
   align-self: center;
   font-family: inherit;
   padding: 16px 32px;
-  max-width: 169px;
+  width: 169px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;

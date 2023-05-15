@@ -142,7 +142,7 @@
             <li class="services-item">
               <img
                 class="services-img-2"
-                src="/images/services/services-img-2.jpg"
+                src="./images/services/services-img-2.jpg"
                 alt="Effective client communication on the telephone"
                 width="360"
                 height="300"
@@ -151,7 +151,7 @@
             <li class="services-item">
               <img
                 class="services-img-3"
-                src="/images/services/services-img-3.jpg"
+                src="./images/services/services-img-3.jpg"
                 alt="Professional mobile-friendly website and app development"
                 width="360"
                 height="300"
@@ -409,7 +409,7 @@
         </div>
 
         <div class="footer-soc-container">
-          <h3 class="footer-soc-title">Social media</h3>
+          <p class="footer-soc-title">Social media</p>
           <ul class="footer-soc-list list">
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link link" aria-label="instagram">
@@ -443,18 +443,20 @@
         </div>
 
         <!-- Footer form -->
-        <form action="" class="footer-form">
-          <h3 class="footer-form-title">Subscribe</h3>
+        <div class="footer-form-container">
+          <p class="footer-form-title">Subscribe</p>
+          <form action="" class="footer-form">
             <label class="footer-form-field"> 
-              <input type="text" placeholder="E-mail" class="footer-form-input">
-              <a href="" class="footer-form-link" aria-label="subscribe">
+              <input type="email" name="email" placeholder="E-mail" class="footer-form-input">
+              <button class="footer-form-btn" type="submit">
               Subscribe
               <svg class="footer-form-icon"  width="24" height="24">
               <use href="./images/icons.svg#icon-subscribe"></use>
               </svg>
-              </a>
+              </button>
             </label>
-        </form>
+            </form>
+        </div>
       </div>
     </footer>
 

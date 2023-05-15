@@ -792,8 +792,8 @@ textarea {
 
 .modal-checkbox-field {
   display: flex;
+  width: 100%;
   align-items: center;
-  justify-content: center;
   margin-bottom: 24px;
 }
 .form-checkbox {
@@ -822,37 +822,39 @@ input[type='checkbox']:checked + .icon-vector > .icon-vector-checked {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
-  color: var(--modal-field-main-color);
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .chekbox-policy-link {
   color: var(--modal-field-accent-color);
 }
 
-.modal-button-container {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
 .modal-form-btn {
+  display: block;
+  width: 169px;
+  height: 56px;
   margin: 0 auto;
   align-self: center;
   font-family: inherit;
-  padding: 16px 32px;
-  width: 169px;
+
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: transparent;
-  font-family: inherit;
+  border: none;
   background-color: var(--btn-hero-color);
   color: var(--btn-text-color);
-  border: none;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background-color: var(--btn-accent-color);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px;
 }
 
 /*---------------------- Portfolio section------------------------ */

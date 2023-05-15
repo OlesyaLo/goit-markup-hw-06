@@ -72,42 +72,54 @@
           <ul class="benefits-list list">
             <li class="benefits-item">
               <div class="benefits-item-box">
+                <svg class="benefits-item-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-adv-antenna"></use>
+                </svg>
+              </div>                
                 <h3 class="benefits-item-title">Strategy</h3>
                 <p class="benefits-item-text">
                   Our goal is to identify the business problem to walk away with the perfect and
                   creative solution.
                 </p>
-              </div>
             </li>
 
             <li class="benefits-item">
               <div class="benefits-item-box">
+                 <svg class="benefits-item-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-adv-clock"></use>
+                </svg>
+              </div>              
                 <h3 class="benefits-item-title">Punctuality</h3>
                 <p class="benefits-item-text">
                   Bring the key message to the brand's audience for the best price within the
                   shortest possible time.
-                </p>
-              </div>
+                </p>              
             </li>
 
             <li class="benefits-item">
               <div class="benefits-item-box">
+                 <svg class="benefits-item-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-adv-diagram"></use>
+                </svg>
+              </div>                
                 <h3 class="benefits-item-title">Diligence</h3>
                 <p class="benefits-item-text">
                   Research and confirm brands that present the strongest digital growth
                   opportunities and minimize risk.
-                </p>
-              </div>
+                </p>              
             </li>
 
             <li class="benefits-item">
               <div class="benefits-item-box">
+                 <svg class="benefits-item-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-adv-astronaut"></use>
+                </svg>
+              </div>                
                 <h3 class="benefits-item-title">Technologies</h3>
                 <p class="benefits-item-text">
                   Design practice focused on digital experiences. We bring forth a deep passion for
                   problem-solving.
                 </p>
-              </div>
             </li>
           </ul>
         </div>
@@ -429,21 +441,71 @@
             </li>
           </ul>
         </div>
+
+        <!-- Footer form -->
+        <form action="" class="footer-form">
+          <h3 class="footer-form-title">Subscribe</h3>
+            <label class="footer-form-field"> 
+              <input type="text" placeholder="E-mail" class="footer-form-input">
+              <a href="" class="footer-form-link" aria-label="subscribe">
+              Subscribe
+              <svg class="footer-form-icon"  width="24" height="24">
+              <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+              </a>
+            </label>
+        </form>
       </div>
     </footer>
 
     <!-- Modal section-->
-
     <div class="backdrop is-hidden" data-modal>
       <div class="hero-modal">
-        <p></p>
+
         <button type="button" class="hero-modal-close" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <!-- Modal form-->
+        <form action="" class="modal-form">
+        <h2 class="modal-form-title">Leave your contacts and we will call you back</h2>
+            <label class="modal-form-field">
+              <span class="modal-form-label">Name</span> 
+              <input type="text" class="modal-form-input">
+              <svg class="modal-form-icon"  width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </label>
+            <label class="modal-form-field">
+              <span class="modal-form-label">Phone</span> 
+              <input type="tel" class="modal-form-input">
+              <svg  class="modal-form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            </label>
+            <label class="modal-form-field">
+              <span class="modal-form-label">Email</span> 
+              <input type="mail" class="modal-form-input">
+              <svg class="modal-form-icon"  width="18" height="18">
+              <use href="./images/icons.svg#icon-email" viewBox="0 0 24 32">
+      <path d="M20 8H4c-1."></use>
+              </svg>
+            </label>
+            <label class="modal-form-field comment"><span class="modal-comment-label">Comment</span> 
+              <textarea for="comment" id="comment" rows="" placeholder="Text input" class="modal-form-input comment"></textarea>
+            </label>
+            <label class="modal-checkbox-field" >
+              <input class="chekbox" type="checkbox" name="policy" value="html" checked><span class="chekbox-text">
+              I accept the terms and conditions of the</span>
+              <a href="" class="modal-form-link"> Privacy Policy</a>
+            </label>
+            <div class="modal-button-container"><button type="submit" class="modal-form-btn">Send</button></div>
+        </form>
       </div>
     </div>
+
 
     <script src="./js/modal.js"></script>
   </body>

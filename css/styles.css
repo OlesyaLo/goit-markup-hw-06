@@ -702,13 +702,12 @@ textarea {
 /*---------------------- Modal form---------------------- */
 
 .modal-form {
-  padding: 72px 24px 24px 24px;
   display: block;
   height: auto;
   margin: 0 auto;
 }
 
-.modal-form-title {
+.modal-form-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -722,36 +721,47 @@ textarea {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
   margin-bottom: 8px;
   color: var(--modal-field-main-color);
 }
 .modal-form-label {
-  display: inline-block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   margin-bottom: 4px;
 }
+
 .modal-form-input {
   display: block;
-  font-family: inherit;
+  position: relative;
   width: 100%;
-  margin: 0;
   height: 40px;
   border: 1px solid var(--modal-field-main-color);
   border-radius: 4px;
-  padding: 11px 38px;
-  outline: 0;
+  padding-left: 38px;
+  outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  font-family: inherit;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
 }
 
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: var(--icon-close-modal-main-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
 .modal-form-input:focus-within,
-.modal-form-input.comment:focus-within {
+.modal-form-field:focus-within > .modal-form-textarea {
   border: 1px solid var(--modal-field-accent-color);
   fill: var(--modal-field-accent-color);
 }
@@ -760,42 +770,27 @@ textarea {
   fill: var(--modal-field-accent-color);
 }
 
-.modal-form-icon {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-form-field.comment {
   margin-bottom: 16px;
 }
 
-.modal-comment-label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  margin-bottom: 4px;
+.modal-form-textarea {
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  padding: 8px 16px;
+  resize: none;
+  border: 1px solid var(--modal-field-main-color);
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input.comment {
-  display: block;
-  height: 120px;
-  border: 1px solid var(--modal-field-main-color);
+.modal-form-textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   border-radius: 4px;
   letter-spacing: 0.04em;
-
-  padding: 8px 16px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-input.comment::placeholder {
   color: var(--modal-field-main-color);
 }
 
@@ -811,8 +806,16 @@ textarea {
   color: var(--modal-field-main-color);
 }
 .checkbox {
-  background-color: var(--icon-close-modal-main-color);
+  appearance: none;
+}
+
+.icon-unchecked {
+  background-color: var(--icon-close-modal-accent-color);
+  fill: var(--modal-field-main-color);
   border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:active {
